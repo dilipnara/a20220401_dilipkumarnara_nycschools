@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@+id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.a20220401_dilipkumarnara_nycschools.ui.MainFragment"
+        android:label="main_fragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_SATFragment"
+            app:destination="@id/SATFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SATFragment"
+        android:name="com.example.a20220401_dilipkumarnara_nycschools.ui.SATFragment"
+        android:label="s_a_t_fragment"
+        tools:layout="@layout/s_a_t_fragment" />
+</navigation>
